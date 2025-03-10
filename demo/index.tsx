@@ -13,7 +13,7 @@ import google from "./images/google-favicon.ico";
 let id = 0;
 function App() {
   const [tabs, setTabs] = useState<TabProperties[]>([
-    { id: "abc", favicon: fb, title: "测试", active: true },
+    { id: "abc", favicon: fb, title: "Facebook", active: true },
   ]);
 
   const [darkMode, setDarkMode] = useState(false);
