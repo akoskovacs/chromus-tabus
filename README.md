@@ -6,7 +6,10 @@
 
 ## Installation
 
-> yarn add @sinm/react-chrome-tabs
+> yarn add @akoskovacs/chromus-tabus
+
+> pnpm add @akoskovacs/chromus-tabus
+
 ## Usage
 
 ```tsx
@@ -127,8 +130,9 @@ export interface TabProperties {
 
 ## Run Demo
 ```bash
-git clone https://github.com/pansinm/react-chrome-tabs.git
+git clone https://github.com/akoskovacs/chromus-tabus.git
 cd react-chrome-tabs
-yarn start
+pnpm install
+pnpm run start
 # visit http://localhost:8080/
 ```

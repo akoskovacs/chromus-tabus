@@ -1,10 +1,11 @@
 {
-  "name": "chrome-tabs",
-  "homepage": "https://github.com/adamschwartz/chrome-tabs",
+  "name": "chromus-tabus",
+  "homepage": "https://github.com/akoskovacs/chromus-tabus",
   "authors": [
-    "Adam Schwartz"
+    "Adam Schwartz",
+    "Akos Kovacs"
   ],
-  "description": "Chrome-style tabs in HTML/CSS/JS",
+  "description": "Chrome-style tabs in React/HTML/CSS/JS",
   "main": "js/chrome-tabs.js",
   "keywords": [
     "chrome",
