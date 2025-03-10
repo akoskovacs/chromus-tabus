@@ -28,7 +28,8 @@
   "scripts": {
     "prepublishOnly": "tsc",
     "start": "webpack serve",
-    "build": "webpack build"
+    "build": "webpack build",
+    "test": "jest"
   },
   "dependencies": {
     "draggabilly": "2.2.0",
@@ -40,16 +41,22 @@
   "devDependencies": {
     "@babel/core": "^7.14.3",
     "@types/draggabilly": "^2.1.2",
+    "@types/jest": "^29.5.14",
     "@types/lodash.isequal": "^4.5.5",
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.0.8",
     "babel-loader": "^8.2.2",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jsdom": "^26.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "style-loader": "^3.3.1",
+    "ts-jest": "^29.2.6",
     "ts-loader": "^9.4.1",
+    "ts-node": "^10.9.2",
     "webpack-dev-server": "^4.11.1"
   },
   "peerDependencies": {
