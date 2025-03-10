@@ -1,6 +1,6 @@
 {
   "name": "@akoskovacs/chromus-tabus",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Chrome-style tabs",
   "keywords": [
     "chrome",
