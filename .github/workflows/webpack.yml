@@ -22,8 +22,18 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Build
+    - name: Install pnpm
       run: |
         npm install -g pnpm
+
+    - name: Install dependencies
+      run: |
         pnpm install
-        pnpm exec webpack
+
+    - name: Build
+      run: |
+        pnpm run build
+
+    - name: Run tests
+      run: |
+        pnpm test
