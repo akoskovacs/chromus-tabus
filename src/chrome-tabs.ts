@@ -19,7 +19,7 @@ const TAB_SIZE_SMALL = 84;
 const TAB_SIZE_SMALLER = 60;
 const TAB_SIZE_MINI = 48;
 
-const noop = (_: any) => {};
+const noop = (_: any) => { };
 
 const closest = (value: number, array: number[]) => {
   let closest = Infinity;
@@ -206,7 +206,7 @@ class ChromeTabs {
     for (let i = 0; i < numberOfTabs; i += 1) {
       const extraWidth =
         flooredClampedTargetWidth < TAB_CONTENT_MAX_WIDTH &&
-        extraWidthRemaining > 0
+          extraWidthRemaining > 0
           ? 1
           : 0;
       widths.push(flooredClampedTargetWidth + extraWidth);
@@ -260,9 +260,8 @@ class ChromeTabs {
 
     this.tabPositions.forEach((position, i) => {
       styleHTML += `
-              .chrome-tabs[data-chrome-tabs-instance-id="${
-                this.instanceId
-              }"] .chrome-tab:nth-child(${i + 1}) {
+              .chrome-tabs[data-chrome-tabs-instance-id="${this.instanceId
+        }"] .chrome-tab:nth-child(${i + 1}) {
                 transform: translate3d(${position}px, 0, 0)
               }
             `;

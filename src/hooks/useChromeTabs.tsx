@@ -22,7 +22,7 @@ const ChromeTabsWrapper = forwardRef<
   HTMLDivElement,
   { className?: string; darkMode?: boolean; toolbar?: React.ReactNode }
 >((props, ref) => {
-  const classList = ["chrome-tabs"];
+  const classList = ["chrome-tabs", "draggable"];
   if (props.darkMode) {
     classList.push("chrome-tabs-dark-theme");
   }
@@ -198,7 +198,7 @@ export function useChromeTabs(listeners: Listeners) {
   }) {
     return <ChromeTabsWrapper {...props} ref={ref} />;
   },
-  []);
+    []);
 
   return {
     ChromeTabs,

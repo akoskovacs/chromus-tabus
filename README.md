@@ -45,7 +45,7 @@ let id = 1;
 
 function App() {
   const [tabs, setTabs] = useState<TabProperties[]>([
-    { id: "abc", favicon: fb, title: "测试", active: true },
+    { id: "abc", favicon: fb, title: "FeetBook", active: true },
   ]);
 
   const addTab = () => {
