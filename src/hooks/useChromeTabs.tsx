@@ -202,6 +202,7 @@ export function useChromeTabs(listeners: Listeners) {
 
   return {
     ChromeTabs,
+    rootRef: ref,
     addTab,
     updateTab,
     removeTab,
